@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS – Datenschutzerklärung</title>
+<style>
+:root { --grund: #070b14; --flaeche: #0e1626; --text: #d8e3f2; --leise: #8a9bb4; --orange: #ffb347; --blau: #4fc3ff; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 50% 0%, #142238 0%, var(--grund) 60%);
+       color: var(--text); font: 16px/1.6 "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+.kern { width: 120px; height: 120px; margin: 0 auto 24px; border-radius: 50%;
+        background: radial-gradient(circle, #fff6e0 0%, var(--orange) 28%, rgba(255,179,71,.25) 55%, transparent 70%);
+        box-shadow: 0 0 60px rgba(255,179,71,.45), inset 0 0 0 3px rgba(79,195,255,.35);
+        animation: puls 4s ease-in-out infinite; }
+.kern.klein { width: 64px; height: 64px; }
+@keyframes puls { 50% { box-shadow: 0 0 90px rgba(255,179,71,.65), inset 0 0 0 3px rgba(79,195,255,.6); } }
+@media (prefers-reduced-motion: reduce) { .kern { animation: none; } }
+h1 { text-align: center; letter-spacing: .18em; color: var(--orange); font-weight: 600; margin: 0; font-size: clamp(1.3rem, 6vw, 2rem); overflow-wrap: anywhere; }
+.unter { text-align: center; color: var(--leise); margin: 6px 0 36px; }
+section { background: var(--flaeche); border: 1px solid rgba(79,195,255,.18); border-left: 3px solid var(--orange);
+          border-radius: 8px; padding: 18px 20px; margin: 16px 0; }
+h2 { margin: 0 0 8px; font-size: 1.05rem; color: var(--blau); letter-spacing: .04em; }
+a { color: var(--orange); }
+code { color: var(--blau); word-break: break-all; }
+nav { text-align: center; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="kern klein" aria-hidden="true"></div>
+  <h1>Datenschutzerklärung</h1>
+  <p class="unter">JARVIS · privater Assistent von Maximilian Kiel · Stand: 20.10.2026</p>
+
+  <section>
+    <h2>1. Wer ist verantwortlich?</h2>
+    <p>Maximilian Kiel, Hiddenhausen · <a href="mailto:max.kiel94@googlemail.com">max.kiel94@googlemail.com</a></p>
+  </section>
+
+  <section>
+    <h2>2. Welche Daten werden verarbeitet?</h2>
+    <p>JARVIS greift nach ausdrücklicher Zustimmung über die Google People API ausschließlich auf die
+       <strong>Google-Kontakte des eigenen Google-Kontos</strong> von Maximilian Kiel zu
+       (Berechtigung <code>https://www.googleapis.com/auth/contacts</code>): Namen, E-Mail-Adressen, Telefonnummern,
+       Anschriften, Firmen, Notizen und Kontakt-Labels.</p>
+  </section>
+
+  <section>
+    <h2>3. Wofür?</h2>
+    <p>Nur um auf Maximilian Kiels Anweisung Kontakte zu suchen, anzuzeigen, anzulegen, zu ändern und Labels zuzuordnen.
+       Es findet keine Werbung, kein Profiling und keine Auswertung zu anderen Zwecken statt.</p>
+  </section>
+
+  <section>
+    <h2>4. Wo und wie lange?</h2>
+    <p>Die Verarbeitung erfolgt ausschließlich lokal auf Maximilian Kiels eigenem Rechner. Kontaktdaten werden nicht auf
+       fremden Servern gespeichert und nicht an Dritte weitergegeben, verkauft oder übertragen. Der Zugangsschlüssel
+       (Refresh-Token) liegt verschlüsselt (Windows-Datenschutz-API) auf diesem Rechner und wird gelöscht, sobald
+       die Anbindung entfernt wird.</p>
+  </section>
+
+  <section>
+    <h2>5. Google-Richtlinien</h2>
+    <p>Die Nutzung und Weitergabe von Informationen, die JARVIS von Google-APIs erhält, entspricht der
+       <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>
+       einschließlich der Anforderungen zur eingeschränkten Nutzung („Limited Use“).</p>
+    <p lang="en"><em>JARVIS's use and transfer to any other app of information received from Google APIs will adhere to the
+       Google API Services User Data Policy, including the Limited Use requirements.</em></p>
+  </section>
+
+  <section>
+    <h2>6. Widerruf</h2>
+    <p>Der Zugriff kann jederzeit unter <a href="https://myaccount.google.com/connections">myaccount.google.com → Sicherheit →
+       Drittanbieter-Apps und -Dienste</a> entfernt werden. Fragen zum Datenschutz bitte an die oben genannte Adresse.</p>
+  </section>
+
+  <nav><a href="index.html">← Startseite</a></nav>
+</main>
+</body>
+</html>

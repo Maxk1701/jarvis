@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS – privater Assistent</title>
+<style>
+:root { --grund: #070b14; --flaeche: #0e1626; --text: #d8e3f2; --leise: #8a9bb4; --orange: #ffb347; --blau: #4fc3ff; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 50% 0%, #142238 0%, var(--grund) 60%);
+       color: var(--text); font: 16px/1.6 "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+.kern { width: 120px; height: 120px; margin: 0 auto 24px; border-radius: 50%;
+        background: radial-gradient(circle, #fff6e0 0%, var(--orange) 28%, rgba(255,179,71,.25) 55%, transparent 70%);
+        box-shadow: 0 0 60px rgba(255,179,71,.45), inset 0 0 0 3px rgba(79,195,255,.35);
+        animation: puls 4s ease-in-out infinite; }
+.kern.klein { width: 64px; height: 64px; }
+@keyframes puls { 50% { box-shadow: 0 0 90px rgba(255,179,71,.65), inset 0 0 0 3px rgba(79,195,255,.6); } }
+@media (prefers-reduced-motion: reduce) { .kern { animation: none; } }
+h1 { text-align: center; letter-spacing: .18em; color: var(--orange); font-weight: 600; margin: 0; font-size: clamp(1.3rem, 6vw, 2rem); overflow-wrap: anywhere; }
+.unter { text-align: center; color: var(--leise); margin: 6px 0 36px; }
+section { background: var(--flaeche); border: 1px solid rgba(79,195,255,.18); border-left: 3px solid var(--orange);
+          border-radius: 8px; padding: 18px 20px; margin: 16px 0; }
+h2 { margin: 0 0 8px; font-size: 1.05rem; color: var(--blau); letter-spacing: .04em; }
+a { color: var(--orange); }
+code { color: var(--blau); word-break: break-all; }
+nav { text-align: center; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="kern" aria-hidden="true"></div>
+  <h1>J.A.R.V.I.S.</h1>
+  <p class="unter">Privater Assistent von Maximilian Kiel</p>
+
+  <section>
+    <h2>Was ist JARVIS?</h2>
+    <p>JARVIS ist ein persönlicher, nicht öffentlicher Assistent, den Maximilian Kiel ausschließlich für sich selbst nutzt.
+       Die Google-Anbindung „JARVIS“ erlaubt es, die <strong>eigenen Google-Kontakte</strong> von Maximilian Kiel
+       zu durchsuchen, neue Kontakte anzulegen und bestehende zu pflegen – jeweils auf seine Anweisung.</p>
+    <p>Die Anwendung wird nicht an andere Personen verteilt, nicht verkauft und ist für die Öffentlichkeit nicht nutzbar.</p>
+  </section>
+
+  <section>
+    <h2>Kontakt</h2>
+    <p>Maximilian Kiel · <a href="mailto:max.kiel94@googlemail.com">max.kiel94@googlemail.com</a></p>
+  </section>
+
+  <nav><a href="datenschutz.html">Datenschutzerklärung</a></nav>
+</main>
+</body>
+</html>
