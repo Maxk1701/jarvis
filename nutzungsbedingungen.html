@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS – Nutzungsbedingungen</title>
+<style>
+:root { --grund: #070b14; --flaeche: #0e1626; --text: #d8e3f2; --leise: #8a9bb4; --orange: #ffb347; --blau: #4fc3ff; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 50% 0%, #142238 0%, var(--grund) 60%);
+       color: var(--text); font: 16px/1.6 "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+.kern { width: 120px; height: 120px; margin: 0 auto 24px; border-radius: 50%;
+        background: radial-gradient(circle, #fff6e0 0%, var(--orange) 28%, rgba(255,179,71,.25) 55%, transparent 70%);
+        box-shadow: 0 0 60px rgba(255,179,71,.45), inset 0 0 0 3px rgba(79,195,255,.35);
+        animation: puls 4s ease-in-out infinite; }
+.kern.klein { width: 64px; height: 64px; }
+@keyframes puls { 50% { box-shadow: 0 0 90px rgba(255,179,71,.65), inset 0 0 0 3px rgba(79,195,255,.6); } }
+@media (prefers-reduced-motion: reduce) { .kern { animation: none; } }
+h1 { text-align: center; letter-spacing: .18em; color: var(--orange); font-weight: 600; margin: 0; font-size: clamp(1.3rem, 6vw, 2rem); overflow-wrap: anywhere; }
+.unter { text-align: center; color: var(--leise); margin: 6px 0 36px; }
+section { background: var(--flaeche); border: 1px solid rgba(79,195,255,.18); border-left: 3px solid var(--orange);
+          border-radius: 8px; padding: 18px 20px; margin: 16px 0; }
+h2 { margin: 0 0 8px; font-size: 1.05rem; color: var(--blau); letter-spacing: .04em; }
+a { color: var(--orange); }
+code { color: var(--blau); word-break: break-all; }
+nav { text-align: center; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="kern klein" aria-hidden="true"></div>
+  <h1>Nutzungsbedingungen</h1>
+  <p class="unter">JARVIS · privater Assistent von Maximilian Kiel · Stand: 20.10.2026</p>
+
+  <section>
+    <h2>1. Geltungsbereich</h2>
+    <p>JARVIS ist eine rein private, nicht öffentliche Anwendung. Sie wird ausschließlich von Maximilian Kiel für sein
+       eigenes Google-Konto genutzt. Andere Personen können sich nicht registrieren oder die Anwendung nutzen.</p>
+  </section>
+
+  <section>
+    <h2>2. Leistung</h2>
+    <p>JARVIS durchsucht, zeigt, legt an und ändert auf Anweisung des Kontoinhabers dessen eigene Google-Kontakte.
+       Es besteht kein Anspruch auf Verfügbarkeit, Fehlerfreiheit oder Weiterentwicklung.</p>
+  </section>
+
+  <section>
+    <h2>3. Kosten</h2>
+    <p>Die Anwendung ist kostenlos und wird nicht verkauft. Es gibt keine Werbung und keine kostenpflichtigen Funktionen.</p>
+  </section>
+
+  <section>
+    <h2>4. Haftung</h2>
+    <p>Die Nutzung erfolgt auf eigene Verantwortung des Kontoinhabers. Für Datenverlust oder Fehler wird, soweit
+       gesetzlich zulässig, keine Haftung übernommen.</p>
+  </section>
+
+  <section>
+    <h2>5. Beendigung</h2>
+    <p>Der Zugriff kann jederzeit unter <a href="https://myaccount.google.com/connections">myaccount.google.com → Sicherheit →
+       Drittanbieter-Apps und -Dienste</a> widerrufen werden. Es gilt deutsches Recht.
+       Siehe auch die <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  </section>
+
+  <nav><a href="index.html">← Startseite</a></nav>
+</main>
+</body>
+</html>
